@@ -55,7 +55,7 @@ function Contact() {
             className="space-y-6"
           >
             {/* Hidden Inputs for FormSubmit */}
-            <input type="hidden" name="_next" value="http://localhost:5173/thank-you" />
+            <input type="hidden" name="_next" value="https://react-louis.vercel.app/thank-you" />
             <input type="hidden" name="_captcha" value="false" />
 
             <div>
