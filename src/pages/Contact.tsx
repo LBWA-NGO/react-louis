@@ -1,8 +1,34 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useNavigate } from 'react-router-dom'; // React Router for navigation
 
 function Contact() {
   const [status, setStatus] = useState<string>('');
+  const navigate = useNavigate(); // Use navigate instead of Next.js router
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setStatus('Sending...');
+
+    const formData = new FormData(event.currentTarget);
+
+    try {
+      const response = await fetch('https://formsubmit.co/lbwafortheblind2015@gmail.com', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+        setTimeout(() => navigate('/thank-you'), 2000); // Redirect to Thank You page after 2 seconds
+      } else {
+        setStatus('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('An error occurred. Please try again.');
+    }
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
@@ -14,7 +40,6 @@ function Contact() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-12">
-        {/* Contact Information */}
         <div>
           <div className="bg-blue-900 text-white rounded-lg p-8">
             <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
@@ -47,17 +72,8 @@ function Contact() {
           </div>
         </div>
 
-        {/* Contact Form */}
         <div>
-          <form
-            action="https://formsubmit.co/lbwafortheblind2015@gmail.com"
-            method="POST"
-            className="space-y-6"
-          >
-            {/* Hidden Inputs for FormSubmit */}
-            <input type="hidden" name="_next" value="https://react-louis.vercel.app/thank-you" />
-            <input type="hidden" name="_captcha" value="false" />
-
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Name
@@ -113,6 +129,8 @@ function Contact() {
               Send Message <Send className="ml-2 h-5 w-5" />
             </button>
           </form>
+
+          {status && <p className="mt-4 text-lg text-gray-700">{status}</p>}
         </div>
       </div>
     </div>
