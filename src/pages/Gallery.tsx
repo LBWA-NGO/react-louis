@@ -48,7 +48,7 @@ const gallery = {
     { "image": "https://i.postimg.cc/HxXCTZty/IMG-0044.jpg" },
     { "image": "https://i.postimg.cc/J08C0NTd/IMG-0045.jpg" },
     { "image": "https://i.postimg.cc/tJzQxswR/IMG-0046.jpg" },
-    { "image": "https://i.postimg.cc/fTwhhvSV/IMG-0047.jpg" },
+    
     { "image": "https://i.postimg.cc/rwH6xXn4/IMG-0048.jpg" },
     { "image": "https://i.postimg.cc/fTBQW0YB/IMG-0049.jpg" },
     { "image": "https://i.postimg.cc/NjFqKf4Y/IMG-0050.jpg" },
@@ -102,13 +102,10 @@ const gallery = {
     { "image": "https://i.postimg.cc/kMjDzDBP/IMG-9298.jpg" },
     { "image": "https://i.postimg.cc/YqhjHkWG/IMG-9299.jpg" },
     { "image": "https://i.postimg.cc/FKQK3Ln3/IMG-9300.jpg" },
-    { "image": "https://i.postimg.cc/TwdYHXxP/IMG-9301.jpg" },
+    
     { "image": "https://i.postimg.cc/q7XvLv9Y/IMG-9302.jpg" },
     { "image": "https://i.postimg.cc/pLjTmZkP/IMG-9303.jpg" },
     { "image": "https://i.postimg.cc/QtfN2nNJ/IMG-9304.jpg" },
-    { "image": "https://i.postimg.cc/hvh4cbfW/IMG-9305.jpg" },
-    { "image": "https://i.postimg.cc/Rh8SF6H3/IMG-9306.jpg" },
-    { "image": "https://i.postimg.cc/GmvLLph2/IMG-9307.jpg" },
     { "image": "https://i.postimg.cc/vmMQcdcv/IMG-9308.jpg" },
     { "image": "https://i.postimg.cc/MGDzBrBJ/IMG-9309.jpg" },
     { "image": "https://i.postimg.cc/TwNG7LQk/IMG-9310.jpg" },
