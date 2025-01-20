@@ -6,6 +6,7 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import About from './pages/About';
+
 import ThankYou from './pages/thank';
 
 function StatCounter({ end, label, icon: Icon }) {
