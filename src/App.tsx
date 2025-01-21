@@ -129,15 +129,15 @@ function App() {
                 <p className="text-blue-200">Empowering visually impaired individuals through education and support.</p>
                 {/* Social Media Links */}
                 <div className="mt-4 flex space-x-4">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white">
+                  {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white">
                     <Instagram className="h-6 w-6" />
-                  </a>
+                  </a> */}
                   <a href="https://www.facebook.com/lbwablinds" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white">
                     <Facebook className="h-6 w-6" />
                   </a>
-                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white">
+                  {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white">
                     <Twitter className="h-6 w-6" />
-                  </a>
+                  </a> */}
                   <a href="https://www.youtube.com/@louisbraillewelfareassocia1061" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white">
                     <Youtube className="h-6 w-6" />
                   </a>
@@ -160,7 +160,7 @@ function App() {
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-blue-800 text-center text-blue-200">
-              <p>&copy; {new Date().getFullYear()} Louis Braille Association. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Louis Braille Welfare Association for the Blind. All rights reserved.</p>
             </div>
           </div>
         </footer>

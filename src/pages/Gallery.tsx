@@ -102,7 +102,6 @@ const gallery = {
     { "image": "https://i.postimg.cc/kMjDzDBP/IMG-9298.jpg" },
     { "image": "https://i.postimg.cc/YqhjHkWG/IMG-9299.jpg" },
     { "image": "https://i.postimg.cc/FKQK3Ln3/IMG-9300.jpg" },
-    
     { "image": "https://i.postimg.cc/q7XvLv9Y/IMG-9302.jpg" },
     { "image": "https://i.postimg.cc/pLjTmZkP/IMG-9303.jpg" },
     { "image": "https://i.postimg.cc/QtfN2nNJ/IMG-9304.jpg" },
